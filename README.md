@@ -1,9 +1,21 @@
-Language: Julia
-Version: 0.5.1
-Compiler: Julia Built-in
-Interpreter: Julia Built-in
-Test Platform: Windows (64-bit)
-Download page: http://julia-lang.org/downloads/
+PARAREAL ALGORITHM IMPLEMENTATION AND SIMULATION IN JULIA
 
-parareal.jl: accepts any fine and coarse integrator (e.g., it can accept any
-Runge-Kutta integration technique).
+Tyler M. Masthay and Saverio Perugini 
+Department of Computer Science 
+University of Dayton 
+300 College Park 
+Dayton, Ohio  45469–2160 
+(937) 229–4079 
+{tmasthay1,saverio}@udayton.edu
+
+ABSTRACT
+
+We present a full implementation of the parareal algorithm—an integration
+technique to solve diﬀerential equations in parallel—in the Julia programming
+language for a fully general, ﬁrst-order, initial-value problem. We provide a
+brief overview of Julia—a concurrent programming language for scientiﬁc
+computing. Our implementation of the parareal algorithm accepts both coarse and
+ﬁne integrators as functional arguments. We use Euler’s method and another
+Runge-Kutta integration technique as the integrators in our experiments. We
+also present a simulation of the algorithm for purposes of pedagogy and as a
+tool for investigating the performance of the algorithm.

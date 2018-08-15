@@ -1,3 +1,20 @@
+# parareal.jl: Parareal Algorithm Implementation and Simulation in Julia
+# Copyright (C) 2018  Tyler M. Mastay
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
 @everywhere function parareal(a,b,nC,nF,K,y0,f,coarseIntegrator,fineIntegrator)
 #initialize coarse information
 xC = linspace(a,b,nC+1);
@@ -101,6 +118,7 @@ function simulate(a,b,N,M,K,y0,f,coarseInt,fineInt,showPrev)
    end
 end
 
+# Implementation schemes.
 function euler(delta,x0,y0,f)
    return y0 + delta * f(x0,y0);
 end
