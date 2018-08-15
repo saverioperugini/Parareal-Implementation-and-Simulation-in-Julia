@@ -1,5 +1,5 @@
 # parareal.jl: Parareal Algorithm Implementation and Simulation in Julia
-# Copyright (C) 2018  Tyler M. Mastay
+# Copyright (C) 2018  Tyler M. Mastay and Saverio Perugini
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
