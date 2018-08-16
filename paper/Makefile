@@ -1,4 +1,4 @@
-SRC = parareal
+SRC = paper
 
 all:
 	lualatex $(SRC)
