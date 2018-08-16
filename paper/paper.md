@@ -148,7 +148,7 @@ parallel eﬃciency.  If $K = P$, then we likely slowed the computation down. Th
 parareal algorithm is guaranteed to converge to the solution given by the
 sequential ﬁne integrator within $P$ iterations.  For a more complete treatment
 of this convergence analysis, we refer the reader to [@Gander:2007]. For fully
-general pseudocode, we refer the reader to [@Aubanel:2011, @Nielsen:2012].
+general pseudocode, we refer the reader to [@Aubanel:2011; @Nielsen:2012].
 
 # Parareal Algorithm Implementation in Julia
 
@@ -173,8 +173,8 @@ use of those two macros leads to concurrent program execution.
 
 \
 
-Figure 2: Slow parareal example. (left) Solution after ﬁrst iteration
-with Euler’s method. (right) Solution after ninth iteration with Euler’s
+Figure 2: Slow parareal example. (top) Solution after ﬁrst iteration
+with Euler’s method. (bottom) Solution after ninth iteration with Euler’s
 method.
 
 * * * * *
