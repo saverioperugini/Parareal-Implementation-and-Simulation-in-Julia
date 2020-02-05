@@ -9,7 +9,7 @@ Department of Computer Science, University of Dayton, 300 College Park Dayton, O
 # Implementation Details
 
 Language: Julia
-Version: 0.5.1
+Version: 1.3.1
 Compiler: Julia Built-in
 Interpreter: Julia Built-in
 Test Platform: Windows (64-bit)
@@ -43,3 +43,13 @@ Julia is available on YouTube at <https://www.youtube.com/watch?v=MtgbeLO6ZM4>.
 The purpose of this software is pedagogical: as a simulation to introduce
 students to the parareal algorithm and the concept of concurrency, and as a
 tool for (graphically) investigating the performance of the algorithm.
+
+
+# Parareal
+This is a short tutorial on the parareal algorithm as presented by Lions, Maday, and Turinici. It provides the implementation of the parareal algorithm for a 1D, first-order ODE. In addition, there is a simulator that provides a simulation of how the algorithm executes. More details are outlined in the preprint https://arxiv.org/abs/1706.08569. 
+
+# parareal.jl
+Provides an implementation of a basic parareal algorithm for a 1D, first-order ODE. It also includes a simulation that details how the algorithm works.
+
+# parareal_tests.jl
+Provides two test cases. The first converges quickly (in the eyeball norm) and is a case where the algorithm may provide speedup. The other converges very slowly, indicating a test case where parareal version will likely be slower than sequential algorithm.
